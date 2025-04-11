@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bross</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mascara-formulario" onclick="esconderform()"></div>
+
+    <div class="header">
+        <img src="img/logo-header.png" alt="logo mario">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>
+    </div>
+    <div class="caixa-mae">
+
+        <div class="caixa-principal">
+            <img src="./img/logo.png" alt="logo do mario bross" class="logo-mario">
+            <p> Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!  </p>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? 
+                Vazamentos inesperados,canos entupidos ou torneiras que não param de pingar? 
+                Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+
+                
+                <button onclick="mostrarform()">Entre em Contato</button>
+        </div>
+        <div>
+            <img class="imagem-mario-luigi" src="img/mario.png" alt="logo Mario e Luigi"> 
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+        <video src="img/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a href="https://wa.me/31996978199?text=opa" class="linkw">
+        <img src="img/whatsapp.png" alt="link para whatsapp" >
+    </a>
+    
+
+    <form class="formulario" 
+    action="https://formcarry.com/s/_tCn0az3_SC"
+    method="POST"
+    enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text" name="nome"> 
+        <input placeholder="Seu telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu Problema" name="duvidas"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+    
+
+
+
+    
+    
+</body>
+<script src="scripts.js"></script>
+
+
+</html>
