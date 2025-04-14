@@ -4,58 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Bross</title>
+    <title>Mario Bros</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    
+    <header>
+        <nav class="header">
+            <img src="img/logo-header.png" alt="Logo Mario Bros">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Nossos Serviços</a></li>
+                <li><a href="#contato">Fale Conosco</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Abrir menu">☰</button>
+        </nav>
+    </header>
+       <div class="mascara-formulario" onclick="esconderform()"></div>
 
-    <div class="mascara-formulario" onclick="esconderform()"></div>
 
-    <div class="header">
-        <img src="img/logo-header.png" alt="logo mario">
-        <a>Home</a>
-        <a>Nossos Serviços</a>
-        <a>Fale Conosco</a>
-    </div>
-    <div class="caixa-mae">
-
-        <div class="caixa-principal">
-            <img src="./img/logo.png" alt="logo do mario bross" class="logo-mario">
-            <p> Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!  </p>
-            <p>Você já se encontrou em uma situação de emergência com encanamento? 
+       <div class="caixa-mae" id="home">
+           <div class="caixa-principal">
+               <img src="./img/logo.png" alt="logo do mario bross" class="logo-mario">
+               <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
+               <p>Você já se encontrou em uma situação de emergência com encanamento?
                 Vazamentos inesperados,canos entupidos ou torneiras que não param de pingar? 
                 Não se preocupe, porque estamos aqui para salvar o dia!
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
-
-                
-                <button onclick="mostrarform()">Entre em Contato</button>
+               <button onclick="mostrarform()">Entre em Contato</button>
+           </div>
+           <div>
+               <img class="imagem-mario-luigi" src="img/mario.png" alt="logo Mario e Luigi">
+           </div>
+       </div>
+       <section id="servicos" class="servicos">
+           <h2>Nossos Serviços</h2>
+           <p>Oferecemos desentupimento, reparo de vazamentos, instalação de torneiras e mais!</p>
+           <ul>
+            <li>Desentupimento de canos</li>
+            <li>Reparo de vazamentos</li>
+            <li>Instalação de torneiras</li>
+            <li>Limpeza de caixas d'água</li>
+        </ul>
+       </section>
+       <div class="caixa-video">
+           <video src="img/video.mp4" autoplay muted loop></video>
+           <div class="mascara"></div>
+       </div>
+       <a href="https://wa.me/31996978199?text=opa" class="linkw">
+           <img src="img/whatsapp.png" alt="link para whatsapp">
+       </a>
+       <form class="formulario" id="contato" action="https://formcarry.com/s/_tCn0az3_SC" method="POST" enctype="multipart/form-data">
+           <input placeholder="Seu Nome" type="text" name="nome">
+           <input placeholder="Seu telefone" type="tel" name="telefone">
+           <textarea placeholder="Digite seu Problema" name="duvidas"></textarea>
+           <button type="submit">Pedir Orçamento</button>
+       </form>
+       <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Telefone: (31) 99697-8199</p>
+                <p>Email: cledsonluiz0@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <img class="imagem-mario-luigi" src="img/mario.png" alt="logo Mario e Luigi"> 
-        </div>
-
-    </div>
-
-    <div class="caixa-video">
-        <video src="img/video.mp4" autoplay muted loop></video>
-        <div class="mascara"></div>
-    </div>
-
-    <a href="https://wa.me/31996978199?text=opa" class="linkw">
-        <img src="img/whatsapp.png" alt="link para whatsapp" >
-    </a>
-    
-
-    <form class="formulario" 
-    action="https://formcarry.com/s/_tCn0az3_SC"
-    method="POST"
-    enctype="multipart/form-data">
-        <input placeholder="Seu Nome" type="text" name="nome"> 
-        <input placeholder="Seu telefone" type="tel" name="telefone">
-        <textarea placeholder="Digite seu Problema" name="duvidas"></textarea>
-        <button type="submit">Pedir Orçamento</button>
-    </form>
+        <p class="footer-bottom">© 2025 Super Mario Bros. Plumbing - Todos os direitos reservados.</p>
+    </footer>
     
 
 
